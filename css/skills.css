@@ -83,8 +83,9 @@ ul.inline-list {
     border-radius: 1rem;
 
     display: flex;
+    justify-content: center;
     padding: 3rem;
-    gap: 4rem;
+    gap: 5rem;
 }
 
 #card {
