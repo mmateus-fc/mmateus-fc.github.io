@@ -1,0 +1,147 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* ---------------------------- Definying Grid ---------------------------- */
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    gap: 1rem; /* gap between grid areas */
+
+    color: white;
+    
+    margin: 2rem;
+
+    border-radius: 1rem;
+}
+
+/* ---------------------------- Grid Areas ---------------------------- */
+header {
+    grid-area: header;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    border-radius: inherit;
+}
+
+#main {
+    grid-area: main;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    border-radius: inherit;
+}
+
+footer {
+    grid-area: footer;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    border-radius: inherit;
+}
+
+/* #--------------------------# Geral #--------------------------# */
+/* ---------------------------- a anchor ---------------------------- */
+a:hover, a:active {
+    color: #B030B0;
+}
+
+/* #--------------------------# Header : list #--------------------------# */
+ul.inline-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* Remove default bullet points */
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* #--------------------------# Main : #--------------------------# */
+/* ---------------------------- Main Card ---------------------------- */
+.block {
+    margin: 1rem;
+    border-radius: inherit;
+    border: solid 1px rgb(74, 74, 74);
+    background-color: white;
+
+    color: black;   
+    border-radius: 1rem;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.block ul li{
+    text-indent: 2rem;
+    text-align: justify;
+    padding: 2px;
+}
+
+.block ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skills_list {
+    display: flex;
+    gap: 2rem;
+}
+
+/* #--------------------------# Footer : #--------------------------# */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* #--------------------------# Google Fonts #--------------------------# */
+body {
+    font-family: "Lora", sans-serif;
+}
+
+.block {
+    font-family: "PT Serif", sans-serif;
+    font-weight: normal;
+}
+
+.block h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+.block h1 {
+    font-weight: 900;
+    font-size: 110%;
+}
+
+.block h3 {
+    font-weight: 600;
+}
+
+.title h3 {
+    font-weight: normal;
+}
+
+

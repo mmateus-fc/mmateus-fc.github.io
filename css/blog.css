@@ -1,0 +1,156 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* ---------------------------- Definying Grid ---------------------------- */
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    gap: 1rem; /* gap between grid areas */
+
+    color: white;
+    
+    margin: 2rem;
+
+    border-radius: 1rem;
+}
+
+/* ---------------------------- Grid Areas ---------------------------- */
+header {
+    grid-area: header;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    border-radius: inherit;
+}
+
+#main {
+    grid-area: main;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    border-radius: inherit;
+}
+
+footer {
+    grid-area: footer;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    border-radius: inherit;
+}
+
+/* #--------------------------# Geral #--------------------------# */
+/* ---------------------------- a anchor ---------------------------- */
+a:hover, a:active {
+    color: #B030B0;
+}
+
+/* #--------------------------# Header : list #--------------------------# */
+ul.inline-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* Remove default bullet points */
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* #--------------------------# Main : #--------------------------# */
+
+/* ---------------------------- Blog ---------------------------- */
+.container-blog {
+    margin: 1rem;
+    border-radius: inherit;
+    border: solid 1px white;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.container-blog h1 {
+    font-family: "Merriweather", sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.container-blog h2 {
+    font-family: "Merriweather", sans-serif;
+    font-size: 2rem;
+    color: rgb(37, 97, 176);
+    text-align: center;
+    padding: 2rem;
+}
+
+.post-side-grid {
+    display: grid;
+    grid-template-areas: 
+    'post side';
+    grid-template-columns: 75rem 15rem;
+    grid-template-rows: auto auto;
+    
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;   
+}
+
+.post {
+    grid-area: post;
+
+}
+
+.side {
+    margin: 1rem;
+    grid-area: side;
+    border-radius: 1rem;    
+    border: solid 1px white; 
+}
+
+.post-each {
+    margin: 1rem;
+    border: solid 1px white; 
+    border-radius: 1rem;   
+    border: solid 1px white; 
+}
+
+.login {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+/* #--------------------------# Footer : #--------------------------# */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* #--------------------------# Google Fonts #--------------------------# */
+body {
+    font-family: "Lora", sans-serif;
+}
+
+.about-me-text {
+    font-family: "PT Serif", sans-serif;
+}
+
+nav.nav-icons, 
+nav.nav-button {
+    font-family: "Merriweather", sans-serif;
+}

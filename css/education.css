@@ -1,0 +1,242 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* ---------------------------- Definying Grid ---------------------------- */
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    gap: 1rem; /* gap between grid areas */
+
+    color: white;
+    
+    margin: 2rem;
+
+    border-radius: 1rem;
+}
+
+/* ---------------------------- Grid Areas ---------------------------- */
+header {
+    grid-area: header;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    border-radius: inherit;
+}
+
+#main {
+    grid-area: main;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    border-radius: inherit;
+}
+
+footer {
+    grid-area: footer;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    border-radius: inherit;
+}
+
+/* #--------------------------# Geral #--------------------------# */
+/* ---------------------------- a anchor ---------------------------- */
+a:hover, a:active {
+    color: #B030B0;
+}
+
+/* #--------------------------# Header : list #--------------------------# */
+ul.inline-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* Remove default bullet points */
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* #--------------------------# Main : #--------------------------# */
+
+/* ---------------------------- Education ---------------------------- */
+.container-education {
+    margin: 1rem;
+    border-radius: inherit;
+    border: solid 1px white;
+    background-color: black;
+
+    display: grid;
+
+    grid-template-areas: 
+    'card description';
+
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto;
+
+    gap: 1rem; /* gap between grid areas */
+
+    color: white;   
+    margin: 1rem;
+    border-radius: 1rem;
+
+    align-items: center; 
+}
+
+#card {
+    grid-area: card; /* grid */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+#description {
+    grid-area: description; 
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: left; 
+    gap: 2rem;
+    padding: 3rem; */
+}
+
+/* ---------------------------- Rectangular ---------------------------- */
+.rectangular-out {
+    position: relative; 
+    width: 15rem;
+    height: 20rem;
+    background: linear-gradient(#f0f, #0ff);
+    box-shadow: 0 0 1rem 0.5rem rgba(66, 165, 175, 0.5); 
+}
+
+.rectangular-inner {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* This moves the .rectangular-inner back by 50% of its own width and height, effectively centering it within the .retcangular */
+    width: 96%; 
+    height: 96%; 
+    background: rgb(0, 0, 0, 0.9);
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 3rem;
+}
+
+/* ---------------------------- Description List ---------------------------- */
+#description ul {
+    list-style-type: none; /* Remove default bullet points */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: left; /* Center items horizontally */
+    justify-content: space-between;
+
+    padding: 2rem;
+    gap: 3rem;
+}
+
+#description ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center items vertically */
+    align-items: left; /* Center items horizontally */
+    justify-content: left;
+    gap: 2rem;
+}
+
+.description-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: left; /* Center items horizontally */
+    justify-content: left;
+    gap: 1rem;
+}
+
+/* ---------------------------- Hexagon ---------------------------- */
+.hexagon-out {
+    position: relative; 
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background: linear-gradient(#f0f, #0ff);
+    width: 5rem;
+    height: 5rem;
+}
+
+.hexagon-inner {
+    position: absolute; /* absolutely: This makes sure that the .hexagon-inner is positioned relative to the .hexagon. */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* This moves the .hexagon-inner back by 50% of its own width and height, effectively centering it within the .hexagon. */
+    width: 92%; 
+    height: 92%; 
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background: rgb(0, 0, 0, 0.8);
+}
+
+/* ---------------------------- Nav Research ---------------------------- */
+.list-research nav:hover *{
+    filter: brightness(180%);
+}
+
+/* #--------------------------# Footer : #--------------------------# */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* #--------------------------# Google Fonts #--------------------------# */
+body {
+    font-family: "Lora", sans-serif;
+}
+
+.description-content h1, h2, h3 {
+    font-family: "PT Serif", sans-serif;
+    font-weight: normal;
+}
+
+.description-content h1 {
+    font-weight: 900;
+    font-size: 110%;
+}
+
+.description-content h2 {
+    font-weight: 600;
+    font-size: 100%;
+}
+
+#name {
+    grid-area: name;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* text-align is used to align text content within block-level elements */
+    flex-wrap: wrap; /* Allow content to wrap onto multiple lines */
+    padding-top: 1rem;
+}

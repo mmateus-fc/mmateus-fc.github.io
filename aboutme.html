@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta 
+        charset="utf-8"
+        name="viewport" 
+        content="width=device-width"
+    >
+    
+    <title> <!-- Shows up as the name of the tab -->
+        About Me
+    </title>
+
+    <link
+        href = './css/reset.css'
+        rel = 'stylesheet'
+        type= 'text/css'        
+    >
+    
+    <link
+        href = './css/background.css'
+        rel = 'stylesheet'
+        type= 'text/css'
+    >
+
+    <link
+        href = './css/aboutme.css'
+        rel = 'stylesheet'
+        type= 'text/css'
+    >
+
+    <link
+    href = './css/modal.css'
+    rel = 'stylesheet'
+    type= 'text/css'
+    >
+
+    <!-- Icons: FontAwesome-->
+    <script src="https://kit.fontawesome.com/8a7c27490c.js" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="./js/aboutme.js" defer></script>
+</head>
+
+<body>
+    <div
+        class="container">
+        <header>
+            <nav>
+                <ul
+                    class="inline-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="aboutme.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="education.html">Education</a>
+                    </li>
+                    <li>
+                        <a href="research.html">Research</a>
+                    </li>                   
+                    <li>
+                        <a href="experience.html" >Experience</a>
+                    </li>
+                    <li>
+                        <a href="skills.html" >Skills and Achievements</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="cv.html">CV</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <article
+            id="main">
+            <div
+                class="container-about-me">
+                <section
+                    class="about-me-text">
+                    <h1
+                        class="me-name">
+                        Hi, I am Mateus
+                    </h1>
+                    <br>
+                    <h2 
+                        class="me-subtitle">
+                        Computer Science Student
+                    </h2>
+                    <br>
+                    <p>I am a BSc Computer Science student within the School of Eletronic Engineering and Computer Science at Queen Mary University of London.</p>
+                    <p>My academic pursuits are complemented by a diverse range of experiences across various sectors. From my engagements in civil engineering to navigating the complexities of logistics, data engineering, and finance, each opportunity has enriched my understanding of real-world challenges and solutions.</p>
+                    <p>From designing high-rise buildings and massive concrete bridges 
+                        to developing software to gather data from customers and enhance their experience, 
+                        and empowering companies through data-driven optimization and innovation.
+                        I find myself continually drawn to the dynamic field of computer science, 
+                        fascinated by its potential to enhance people's daily experiences 
+                        and drive companies to improve their results through innovative technologies.
+                    </p>
+
+                    <nav
+                        class="nav-button">
+                        <a 
+                            href="#"
+                            class="a-button"
+                            onclick="openEmailPrompt()">
+                            Let's Talk
+                        </a>
+                        <div id="emailModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeEmailPrompt()">&times;</span>
+                                <h1>Send me an email!</h1>
+                                <h1>themateusfc@gmail.com</h1>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <aside>
+                        <nav
+                            class="nav-icons">
+                            <h1
+                                class="social-profile"
+                                >Social Media
+                            </h1>
+                            <ul>
+                                <li>
+                                    <a 
+                                        href="https://www.linkedin.com/in/mateus-f-c/" 
+                                        target="_blank">
+                                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a 
+                                    href="#" 
+                                    onclick="openEmailPrompt()">
+                                        <i class="fa-regular fa-envelope fa-2x"></i>
+                                    </a>
+                                    <div id="emailModal" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeEmailPrompt()">&times;</span>
+                                            <h1>Send me an email!</h1>
+                                            <h1>themateusfc@gmail.com</h1>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <a 
+                                        href="https://github.com/mmateus-fc"
+                                        target="_blank">
+                                    <i class="fa-brands fa-github fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                        href="https://www.instagram.com/mmatfc/" 
+                                        target="_blank">
+                                        <i class="fa-brands fa-instagram fa-2x"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                </section>
+
+                <figure>
+                    <img
+                        class="profile-photo"
+                        src="Profile Photo/lbridge.jpg"
+                        alt="Profile Picture">
+                    <figcaption>Profile Picture</figcaption>
+            </div>
+        </article>
+    
+        <footer>
+            <section>
+                <nav>
+                    <a href = "index.html">Home</a>
+                </nav>
+            </section>
+            <section>
+                <em>
+                    Mateus Franco e Cunha 2024 &copy  
+                    <!-- 
+                        Symbol | Representation
+                            ©           &copy
+                    -->
+                </em>
+            </section>
+        </footer>        
+        </div>
+    </div>
+</body>
+</html>
+
