@@ -29,12 +29,6 @@
         type= 'text/css'
     >
 
-    <link
-    href = './css/modal.css'
-    rel = 'stylesheet'
-    type= 'text/css'
-    >
-
     <!-- Icons: FontAwesome-->
     <script src="https://kit.fontawesome.com/8a7c27490c.js" crossorigin="anonymous"></script>
     
@@ -43,8 +37,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
 
-    <!-- JS -->
-    <script src="./js/aboutme.js" defer></script>
 </head>
 
 <body>
@@ -55,7 +47,7 @@
                 <ul
                     class="inline-list">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="home.html">Home</a>
                     </li>
                     <li>
                         <a href="aboutme.html">About Me</a>
@@ -105,30 +97,17 @@
                     </h2>
                     <br>
                     <p>I am a BSc Computer Science student within the School of Eletronic Engineering and Computer Science at Queen Mary University of London.</p>
-                    <p>My academic pursuits are complemented by a diverse range of experiences across various sectors. From my engagements in civil engineering to navigating the complexities of logistics, data engineering, and finance, each opportunity has enriched my understanding of real-world challenges and solutions.</p>
-                    <p>From designing high-rise buildings and massive concrete bridges 
-                        to developing software to gather data from customers and enhance their experience, 
-                        and empowering companies through data-driven optimization and innovation.
-                        I find myself continually drawn to the dynamic field of computer science, 
-                        fascinated by its potential to enhance people's daily experiences 
-                        and drive companies to improve their results through innovative technologies.
-                    </p>
+                    <p>My academic journey is complemented by a diverse range of experiences across various industries. While I have contributed to civil engineering projects, such as designing high-rise buildings and large-scale concrete bridges, my expertise extends well beyond this field. I have gained valuable experience in software and web development, cloud development, data engineering, data analysis, finance, and logistics. These roles have allowed me to navigate complex datasets, develop software to enhance customer interactions, and perform intricate data analysis to drive business decisions.</p>
+                    <p>Through these experiences, I have developed a deep passion for the dynamic field of computer science, continually motivated by the challenges and innovations it offers.</p>
 
                     <nav
                         class="nav-button">
                         <a 
-                            href="#"
+                            href="send-email.html"
                             class="a-button"
-                            onclick="openEmailPrompt()">
+                            href="">
                             Let's Talk
                         </a>
-                        <div id="emailModal" class="modal">
-                            <div class="modal-content">
-                                <span class="close" onclick="closeEmailPrompt()">&times;</span>
-                                <h1>Send me an email!</h1>
-                                <h1>themateusfc@gmail.com</h1>
-                            </div>
-                        </div>
                     </nav>
 
                     <aside>
@@ -149,17 +128,9 @@
                                 
                                 <li>
                                     <a 
-                                    href="#" 
-                                    onclick="openEmailPrompt()">
-                                        <i class="fa-regular fa-envelope fa-2x"></i>
+                                        href="send-email.html">
+                                    <i class="fa-regular fa-envelope fa-2x"></i>
                                     </a>
-                                    <div id="emailModal" class="modal">
-                                        <div class="modal-content">
-                                            <span class="close" onclick="closeEmailPrompt()">&times;</span>
-                                            <h1>Send me an email!</h1>
-                                            <h1>themateusfc@gmail.com</h1>
-                                        </div>
-                                    </div>
                                 </li>
                                 
                                 <li>
@@ -193,7 +164,7 @@
         <footer>
             <section>
                 <nav>
-                    <a href = "index.html">Home</a>
+                    <a href = "home.html">Home</a>
                 </nav>
             </section>
             <section>

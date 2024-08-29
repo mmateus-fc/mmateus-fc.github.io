@@ -1,0 +1,13 @@
+CREATE TABLE blog_posts (
+    ID INT NOT NULL AUTO_INCREMENT,
+    title varchar(255),
+    content text,
+    image_url text, 
+    date_time datetime default CURRENT_TIMESTAMP,
+    date date default CURRENT_DATE,
+    time time default CURRENT_TIME,
+    status boolean DEFAULT true,
+    PRIMARY KEY (ID)
+    )
+    
+    

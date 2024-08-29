@@ -83,9 +83,8 @@ ul.inline-list {
     border-radius: 1rem;
 
     display: flex;
-    justify-content: center;
     padding: 3rem;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 #card {
@@ -98,11 +97,6 @@ ul.inline-list {
     text-indent: 2rem;
     text-align: justify;
     margin: 1rem;
-}
-
-.skills-text bold{
-    font-weight: 900;
-    color: #B030B0;
 }
 
 .skills {
@@ -283,6 +277,11 @@ ul.list-exp {
     width: 3rem;
 }
 
+figcaption {
+    text-align: center;
+    font-size: 80%;
+}
+/*
 .icons figcaption {
     opacity: 0;
 }
@@ -291,7 +290,7 @@ ul.list-exp {
 .icons:hover img {
     opacity: 1;
 }
-
+*/
 /* #--------------------------# Footer : #--------------------------# */
 footer {
     display: flex;
@@ -302,6 +301,26 @@ footer {
     padding-right: 2rem;
 }
 
+.block h1 {
+    font-size: 150%;
+    font-weight: 900;
+    color: #6C91BF;
+    padding: 1rem;
+}
+
+.certification ul{
+    list-style-type: none;
+}
+
+.certification {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 5rem;
+}
+
+.certification img {
+    width: 10rem;
+}
 /* #--------------------------# Google Fonts #--------------------------# */
 body {
     font-family: "Lora", sans-serif;
@@ -323,4 +342,6 @@ body {
     font-weight: 900;
     font-size: 110%;
 }
+
+
 

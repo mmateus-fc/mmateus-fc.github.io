@@ -144,4 +144,8 @@ body {
     font-weight: normal;
 }
 
-
+/* #--------------------------# Media Queries #--------------------------# */
+.download-cv {
+    text-align: right;
+    font-size: 60%;
+}

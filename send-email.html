@@ -18,7 +18,7 @@
     >
     
     <link
-        href = './css/background-blog.css'
+        href = './css/background.css'
         rel = 'stylesheet'
         type= 'text/css'
     >
@@ -37,6 +37,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
 
+    <script src="./js/send-email.js" defer></script>
 </head>
 
 <body>
@@ -47,7 +48,7 @@
                 <ul
                     class="inline-list">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="home.html">Home</a>
                     </li>
                     <li>
                         <a href="aboutme.html">About Me</a>
@@ -74,7 +75,7 @@
                         <a href="contact.html">Contact</a>
                     </li>
                     <li>
-                        <a href="blog.html">Blog</a>
+                        <a href="./php/blog.php">Blog</a>
                     </li>
                 </ul>
             </nav>
@@ -83,11 +84,12 @@
         <article
             id="main">
             <div
-                class="container-login">
+                class="container-form">
                 <div
-                    class="form-login">
-                    <form
-                        action = "https://drusmannaeem.co.uk/process.php"
+                    class="form">
+                    <form 
+                        id="form_inquiry"
+                        action="./php/send-email-db-connect.php"
                         method = "POST">  
 
                         <fieldset>
@@ -95,30 +97,26 @@
 
                             <label>Name</label>
                             <br>
-                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input id="name" type="text" name="name" placeholder="Your Name" required>
 
                             <br><br>
                             <label>Email Adress</label>
                             <br>
-                            <input type="text" name="email" placeholder="your@email" pattern="[^@\s]+@[^@\s]+" required>
+                            <input id="email" type="text" name="email" placeholder="your@email.com" pattern="[^@\s]+@[^@\s]+" required>
 
                             <br><br>
                             <label>Subject</label>
                             <br>
-                            <input type="text" name="subject" placeholder="Subject" required>
+                            <input id="subject" type="text" name="subject" placeholder="Subject" required>
 
                             <br><br>
                             <label>Content</label>
                             <br>
-                            <textarea class="new-post" type="text" name="content" placeholder="Content" required></textarea>
+                            <textarea id="content" class="new-post" type="text" name="content" placeholder="Content" required></textarea>
 
                             <div
                                 class="buttons">
-                                <input
-                                    class="button-login"
-                                    type="submit"
-                                    value="Add Post"
-                                >
+                                <button id="button-submit" class="button-submit" value="button-submit" type="submit">Submit</button>
                             </div>
                         </fieldset>
                     </form>
@@ -129,7 +127,7 @@
         <footer>
             <section>
                 <nav>
-                    <a href = "index.html">Home</a>
+                    <a href = "home.html">Home</a>
                 </nav>
             </section>
             <section>

@@ -230,13 +230,3 @@ body {
     font-weight: 600;
     font-size: 100%;
 }
-
-#name {
-    grid-area: name;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* text-align is used to align text content within block-level elements */
-    flex-wrap: wrap; /* Allow content to wrap onto multiple lines */
-    padding-top: 1rem;
-}

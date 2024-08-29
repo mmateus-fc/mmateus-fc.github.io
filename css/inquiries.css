@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* ---------------------------- Definying Grid ---------------------------- */
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    gap: 1rem; /* gap between grid areas */
+
+    color: white;
+    
+    margin: 2rem;
+
+    border-radius: 1rem;
+}
+
+/* ---------------------------- Grid Areas ---------------------------- */
+header {
+    grid-area: header;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    border-radius: inherit;
+}
+
+#main {
+    grid-area: main;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    border-radius: inherit;
+}
+
+footer {
+    grid-area: footer;
+    
+    border: 1px rgb(255, 255, 255) solid;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    border-radius: inherit;
+}
+
+/* #--------------------------# Geral #--------------------------# */
+/* ---------------------------- a anchor ---------------------------- */
+a:hover, a:active {
+    color: #B030B0;
+}
+
+/* #--------------------------# Header : list #--------------------------# */
+ul.inline-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* Remove default bullet points */
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* #--------------------------# Main : #--------------------------# */
+
+/* ---------------------------- Blog ---------------------------- */
+.container-inquiries {
+    display: flex;
+    justify-content: center;
+}
+
+.styled-table {
+    margin: 1rem;
+    border-radius: inherit;
+    border: solid 1px white;
+    background: rgba(0, 0, 0, 0.4);
+
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    justify-content: center;
+
+    border: solid 1px white;
+}
+.styled-table th, .styled-table td {
+    padding: 8px;
+    border: solid 1px white;
+    min-width: 15rem;
+}
+
+.styled-table th {
+    text-align: center;
+}
+
+.styled-table td {
+    text-align: left;
+}
+
+/* #--------------------------# Footer : #--------------------------# */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* #--------------------------# Google Fonts #--------------------------# */
+body {
+    font-family: "Lora", sans-serif;
+}
+
+.about-me-text {
+    font-family: "PT Serif", sans-serif;
+}
+
+nav.nav-icons, 
+nav.nav-button {
+    font-family: "Merriweather", sans-serif;
+}

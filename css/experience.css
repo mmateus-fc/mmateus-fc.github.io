@@ -122,12 +122,11 @@ ul.inline-list {
 /* ---------------------------- List Experience ---------------------------- */
 ul.list-exp {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style-type: none; /* Remove default bullet points */
-
+    gap: 4rem;
     margin: 3rem;
 }
-
 
 /* ---------------------------- List Rectangular ---------------------------- */
 .rectangular-out-list {
@@ -185,6 +184,10 @@ ul.list-exp {
     border-radius: 1rem;
     border: 1px solid white;
     margin: 1rem; 
+}
+
+.aws {
+    height: 6rem;
 }
 
 .shopee {

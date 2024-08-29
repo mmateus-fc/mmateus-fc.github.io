@@ -78,22 +78,45 @@ ul.inline-list {
     border-radius: inherit;
     border: solid 1px white;
     background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    gap: 0rem; 
+    color: black;
 }
 
-.container-blog h1 {
+.blog-image {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.picture img {
+    position: relative;
+    width: 40rem;
+    height: 25rem;
+    margin: 0.5rem;
+    border: white solid 1px;
+}
+
+.blog-image h1 {
+    position: absolute;
+    text-align: center;
+    top: 12rem;
+
+    font-family: "Merriweather", sans-serif;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.blog-image h2 {
+    position: absolute;
+    text-align: center;
+    top: 15rem;
+
     font-family: "Merriweather", sans-serif;
     font-size: 3rem;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-}
-
-.container-blog h2 {
-    font-family: "Merriweather", sans-serif;
-    font-size: 2rem;
-    color: rgb(37, 97, 176);
-    text-align: center;
-    padding: 2rem;
+    color: rgb(255, 255, 255);
 }
 
 .post-side-grid {
@@ -109,7 +132,7 @@ ul.inline-list {
 
 .post {
     grid-area: post;
-
+    border-radius: inherit; 
 }
 
 .side {
@@ -120,10 +143,30 @@ ul.inline-list {
 }
 
 .post-each {
+    padding: 2rem;
     margin: 1rem;
     border: solid 1px white; 
-    border-radius: 1rem;   
-    border: solid 1px white; 
+    border-radius: inherit; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    gap: 1rem; /* gap between elements */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.post-each h1 {
+    font-size: 110%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.post-each p {
+    text-align: justify;
+}
+
+.post-each img {
+    width: 30rem;
 }
 
 .login {
@@ -146,11 +189,10 @@ body {
     font-family: "Lora", sans-serif;
 }
 
-.about-me-text {
-    font-family: "PT Serif", sans-serif;
-}
 
 nav.nav-icons, 
-nav.nav-button {
+nav.nav-button,
+.post {
     font-family: "Merriweather", sans-serif;
 }
+

@@ -1,0 +1,14 @@
+CREATE TABLE admin_register (
+    ID INT NOT NULL AUTO_INCREMENT,
+    first_name varchar(255),
+    last_name varchar(255),
+    email varchar (255),
+    password varchar (255),
+    date_time datetime default CURRENT_TIMESTAMP,
+    date date default CURRENT_DATE,
+    time time default CURRENT_TIME,
+    PRIMARY KEY (ID)
+    )
+    
+    
+    

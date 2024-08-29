@@ -101,7 +101,11 @@ input {
     width: 25rem; /* Initial width */
 }
 
-.button-login {
+.buttons {
+    text-align: center;
+}
+
+.btn {
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -111,10 +115,18 @@ input {
     background: rgba(0, 0, 0, 0.4);
     color: white;
     font-size: 110%;
+
+    width: 10rem;
 }
 
-.button-login:hover {
+.btn:hover {
     background: rgba(166, 141, 39, 0.6);
+}
+
+.invalid {
+    color: rgb(221, 197, 15);
+    font-size: 100%;
+    text-align: center;
 }
 
 /* #--------------------------# Footer : #--------------------------# */
