@@ -5,4 +5,6 @@ body {
         #950043,
         #023263
         );        
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
 }
+
