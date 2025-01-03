@@ -1,10 +1,11 @@
 body {
-    background: conic-gradient(
-
-        #023263,
-        #950043,
-        #023263
-        );        
+    /* background: conic-gradient(#023263,#950043,#023263); */
+    background-image: linear-gradient(0deg, #7904eb 0%, #110458 100%);
+    /* background-image: linear-gradient(90deg, #5BB8EB 0%, #83CDEB 99%); */
+    /* background-image: linear-gradient(159deg, #00E2E0 1%, #00E2E0 22%, #48BED9 35%, #00A9F2 71%, #17459DFF 99%); */
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+    /* background-image: linear-gradient(to right bottom, #7904eb, #5b0bc5, #400ba0, #27087b, #110458); */
+    
     background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
 }
 
