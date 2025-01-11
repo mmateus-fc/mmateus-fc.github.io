@@ -107,6 +107,10 @@ ul.inline-list {
     gap: 2rem;
 }
 
+.skills_list ul li {
+    text-indent: 0;
+}
+
 /* #--------------------------# Footer : #--------------------------# */
 footer {
     display: flex;
