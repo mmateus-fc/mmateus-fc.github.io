@@ -1,0 +1,19 @@
+/* LEGACY CODE 
+* Particles moving roundly in the background
+*/
+
+.particles {
+    position: absolute; /* Positions the particles over the entire viewport */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: radial-gradient(circle, var(--primary-cyan) 1px, transparent 1px);
+    /* Creates a radial gradient where each "particle" is a 1px cyan dot */
+    background-size: 100px 100px; /* The distance between each particle */
+    animation: particleFloat 50s ease-in-out infinite; /* Animates the movement of the particles */
+    opacity: 0.3; /* Makes the particles semi-transparent */
+}
+
+@keyframes particleFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}

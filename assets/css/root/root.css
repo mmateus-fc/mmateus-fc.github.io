@@ -1,0 +1,89 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cyberpunk Color Palette */
+    --primary-bg: #0a0a0f;
+    --secondary-bg: #1a1a2e;
+    --accent-bg: #16213e;
+    --glass-bg: rgba(22, 33, 62, 0.1);
+    --glass-border: rgba(0, 255, 255, 0.2);
+    
+    --primary-cyan: #00ffff;
+    --secondary-cyan: #0099cc;
+    --neon-blue: #0066ff;
+    --neon-purple: #9933ff;
+    --electric-pink: #ff0099;
+    
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --text-accent: #00ffff;
+    
+    /* Typography */
+    --font-primary: 'Orbitron', monospace;
+    --font-secondary: 'Rajdhani', sans-serif;
+    
+    /* Spacing */
+    --section-padding: 100px 0;
+    --container-padding: 0 20px;
+    
+    /* Animations */
+    --transition-fast: 0.3s ease;
+    --transition-medium: 0.5s ease;
+    --transition-slow: 0.8s ease;
+}
+
+body {
+    font-family: var(--font-secondary);
+    background: var(--primary-bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--container-padding);
+}
+
+/* Section */
+.section {
+    padding: var(--section-padding);
+    position: relative;
+}
+
+/* Section Titles */
+.section-title {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--text-primary);
+    text-shadow: 0 0 20px var(--primary-cyan);
+}
+
+.subsection-title {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-cyan);
+    text-shadow: 0 0 10px var(--primary-cyan);
+}
+
+.tag {
+    padding: 5px 12px;
+    background: var(--glass-bg);
+    color: var(--primary-cyan);
+    border: 1px solid var(--glass-border);
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}

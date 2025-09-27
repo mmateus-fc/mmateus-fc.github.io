@@ -1,0 +1,157 @@
+/* Basic Items settings */
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+} 
+
+.timeline-content {
+    flex: 1;
+    max-width: 450px;
+}
+
+.timeline-date {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-cyan);
+    margin-bottom: 10px;
+}
+
+.timeline-title {
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.timeline-company {
+    color: var(--neon-purple);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.timeline-responsibilities {
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.timeline-responsibilities li {
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-responsibilities li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: var(--primary-cyan);
+    font-size: 0.8rem;
+}
+
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Timeline Settings */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--primary-cyan), var(--neon-purple));
+    transform: translateX(-50%);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: var(--primary-cyan);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.dot-glow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.3), transparent);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Timeline Side Settings*/
+/* Swap container itens to other side*/
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+/* Fix margins distances from timeline */
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: 40px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 40px;
+}
+
+/* Horizontal connector from dot */
+/* Create horizontal connector line */
+.timeline-dot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background: var(--primary-cyan);
+    width: 5rem;
+    transform: translateY(-50%);
+}
+
+/* Position horizontal connector based on odd/even */
+.timeline-item:nth-child(odd) .timeline-dot::after {
+    left: 100%;
+}
+
+.timeline-item:nth-child(even) .timeline-dot::after {
+    right: 100%;
+}
+
+/* Hide elements initially for animation */
+.timeline-item,
+.project-card,
+.skill-icon {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.timeline-item.animate,
+.project-card.animate,
+.skill-icon.animate {
+    opacity: 1;
+    transform: translateY(0);
+}

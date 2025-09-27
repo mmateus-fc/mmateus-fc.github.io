@@ -1,0 +1,21 @@
+/* root */
+@import './root/root.css';
+
+/* background */
+@import './background/background.css';
+
+/* content */
+@import './content/education.css';
+@import './content/experience.css';
+@import './content/home.css';
+@import './content/nav.css';
+@import './content/skill.css';
+
+/* effects */
+@import './effects/buttons.css';
+@import './effects/glass.css';
+@import './effects/glitch.css';
+@import './effects/ring.css';
+
+/* @import './background/ring.css'; */
+@import 'style.css';

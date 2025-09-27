@@ -1,0 +1,92 @@
+.ring-container {
+    position: relative;
+    width: 100%; 
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Create Rings */
+.ring-container .ring {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: -10px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+}
+
+.ring-container .ring:nth-child(3) {
+    position: absolute;
+    bottom: 420px;
+}
+
+/* style */
+.ring-container .ring {
+    border-top: 4px solid var(--primary-cyan);
+}
+
+/* dots */
+.ring-container .ring::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 10px;
+    background-color:  var(--primary-cyan);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #24ecff33, 
+    0 0 0 10px #24ecff22,
+    0 0 0 20px #24ecff11,
+    0 0 20px var(--primary-cyan);
+}
+
+/* animate */
+.ring-container .ring {
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg)
+    }
+}
+
+/* changing rotation directions*/
+.ring-container .ring:nth-child(1) {
+    animation: animate_1 5s linear infinite;
+
+}
+
+/* since child 1 has opposite direction, it must change its dot*/
+.ring-container .ring:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 10px;
+    background-color:  var(--primary-cyan);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #24ecff33, 
+    0 0 0 10px #24ecff22,
+    0 0 0 20px #24ecff11,
+    0 0 20px var(--primary-cyan);
+}
+
+@keyframes animate_1 {
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg)
+    }
+}
+

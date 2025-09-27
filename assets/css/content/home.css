@@ -1,0 +1,115 @@
+.about {
+    padding-top: 10rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 150px;
+    align-items: start;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--primary-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(var(--primary-cyan), var(--neon-purple), var(--electric-pink), var(--primary-cyan));
+    animation: rotate 4s linear infinite;
+    z-index: -1;
+}
+
+.profile-placeholder {
+    width: 85%;
+    height: 85%;
+    background: var(--secondary-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-cyan);
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero-text {
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero-name {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 60px;
+    color: var(--text-primary);
+}
+
+.hero-title {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--primary-cyan);
+    text-shadow: 0 0 20px var(--primary-cyan);
+}
+
+.hero-buttons {
+    margin-top: 80px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row-button {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+/* .hero-buttons {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+} */
+
+.about-description {
+    text-align: justify;
+    padding: .5rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}

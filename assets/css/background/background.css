@@ -1,0 +1,34 @@
+.bg {
+    position: fixed; /* Fixed positioning — stays in place while scrolling */
+    top: 0; /* Positions the element at the top of the viewport */
+    left: 0; /* Positions the element at the left of the viewport */
+    width: 100%; /* Makes the element span the full width of the viewport */
+    height: 100%; /* Makes the element span the full height of the viewport */
+    z-index: -1; /* Places the background behind other content */
+    background: linear-gradient(45deg, var(--primary-bg) 0%, var(--secondary-bg) 50%, var(--accent-bg) 100%);
+    /* Creates a gradient from var(--primary-bg) at 0%, var(--secondary-bg) at 50%, and var(--accent-bg) at 100% */
+}
+
+.grid-overlay {
+    position: absolute; /* Positions the grid over the full viewport */
+    top: 0; /* Positions the grid at the top of the parent */
+    left: 0; /* Positions the grid at the left of the parent */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-image: 
+        linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+    /* Creates two linear gradients — one vertical and one horizontal — for the grid lines */
+    background-size: 50px 50px; /* Each grid square will be 50px */
+    animation: gridMove 30s linear infinite; /* Moves the grid across the screen */
+    /* The animation gridMove is applied, making the grid move diagonally by 50px over 20 seconds in a continuous loop (infinite). */
+}
+
+@keyframes gridMove {
+    0% {
+        background-position: 0px 0px; /* Start position */
+    }
+    100% {
+        background-position: 100px 100px; /* Moves the background by 100px diagonally */
+    }
+}

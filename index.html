@@ -1,43 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta 
-        charset="utf-8"
-        name="viewport" 
-        content="width=device-width"
-    >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus | Technology | Computer Science</title>
     
-    <title> 
-        Home
-    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/mfc_logo_transparent_1-removebg.png">
 
-    <link
-        href = './css/reset.css'
-        rel = 'stylesheet'
-        type= 'text/css'        
-    >
-    
-    <link
-        href = './css/background.css'
-        rel = 'stylesheet'
-        type= 'text/css'
-    >
+    <!--  CSS Style Sheets  -->
+    <link rel="stylesheet" href="assets/css/index.css">
 
-    <link
-        href = './css/home.css'
-        rel = 'stylesheet'
-        type= 'text/css'
-    >
+    <!--  JS Scripts  -->
+    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/background/particles.js"></script>
+    <!-- <script defer src="assets/js/background/add_rings.js"></script> -->
 
-    <!-- Icons: FontAwesome-->
-    <script src="https://kit.fontawesome.com/8a7c27490c.js" crossorigin="anonymous"></script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
-
-    <!-- Google tag (gtag.js) -->
+        <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHMLS0NDXN"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -46,292 +25,745 @@
 
     gtag('config', 'G-DHMLS0NDXN');
     </script>
-   
+
 </head>
-
 <body>
-    <div
-        class="container">
-        <header>
-            <nav>
-                <ul
-                    class="inline-list">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="aboutme.html">About Me</a>
-                    </li>
-                    <li>
-                        <a href="education.html">Education</a>
-                    </li>
-                    <li>
-                        <a href="research.html">Research</a>
-                    </li>                   
-                    <li>
-                        <a href="experience.html" >Experience</a>
-                    </li>
-                    <li>
-                        <a href="skills.html">Skills and Achievements</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="cv.html">CV</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    
-        <article
-            id="main">
+    <!-- Animated Background -->
+    <div class="bg">
+        <div class="grid-overlay"></div>
+        <div class="particles"></div>
+        <!-- <div class="ring-container">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        </div> -->
+    </div>
 
-            <div
-                class="cards-block">
-                <section
-                    class = "cards-line">
-
-                    <div
-                        class="welcome">
-                        <div>
-                            <h1>
-                                Welcome to my page!
-                            </h1>
-                            <br>
-                            <h2> 
-                                Feel free to explore the various sections by selecting the cards.
-                            </h2>
-                        </div>
-                    </div>
-
-                    <a href="aboutme.html">
-                        <div
-                            class="card">
-                            <div
-                                class="rectangular-out">
-                                <div
-                                    class="rectangular-inner card-text">
-                                    <h1>ABOUT ME</h1>
-                                    <i class="fa-solid fa-user-check fa-4x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <figure>
-                        <img 
-                        class="laptop-img"
-                        src="Drawings/magnifying-glass.jpg" alt="">
-                    </figure>
-                </section>
-
-                <section
-                class = "cards-line">
-                    <div
-                        class="line">
-                    </div>
-                </section>
-
-                <section
-                class = "cards-line">
-
-                    <figure>
-                        <img 
-                        class="education-img"
-                        src="Drawings/education.jpg" alt="">
-                    </figure>
-
-                    <a href="education.html">
-                        <div
-                        class="card">
-                            <div
-                                class="rectangular-out">
-                                <div
-                                    class="rectangular-inner card-text">
-                                    <h1>EDUCATION</h1>
-                                    <i class="fa-solid fa-graduation-cap fa-4x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="research.html">
-                        <div
-                        class="card">
-                            <div
-                                class="rectangular-out">
-                                <div
-                                    class="rectangular-inner card-text">
-                                    <h1>RESEARCH</h1>
-                                    <i class="fa-solid fa-flask fa-4x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
-
-                <section
-                class = "cards-line">
-                    <div
-                        class="line">
-                    </div>
-                </section>
-
-                <section
-                class = "cards-line">
-
-                    <figure>
-                        <img 
-                        class="experience-img"
-                        src="Drawings/person-programming.jpg" alt="">
-                    </figure>
-
-                    <a href="experience.html">
-                        <div
-                        class="card">
-                            <div
-                                class="rectangular-out">
-                                <div
-                                    class="rectangular-inner card-text">
-                                    <h1>EXPERIENCE</h1>
-                                    <i class="fa-solid fa-building-user fa-4x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="skills.html">
-                        <div
-                        class="card">
-                            <div
-                                class="rectangular-out">
-                                <div
-                                    class="rectangular-inner card-text">
-                                    <h1>SKILLS AND ACHIEVEMENTS</h1>
-                                    <i class="fa-regular fa-star fa-4x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
-
-                <section
-                class = "cards-line">
-                    <div
-                        class="line">
-                    </div>
-                </section>
-
-                <section
-                class = "cards-line">
-
-                    <figure>
-                        <img 
-                        class="experience-img"
-                        src="Drawings/laptop.jpg" alt="">
-                    </figure>
-
-                    <a href="portfolio.html">
-                        <div
-                        class="card">
-                            <div
-                                class="rectangular-out">
-                                <div
-                                    class="rectangular-inner card-text">
-                                    <h1>PORTFOLIO</h1>
-                                    <i class="fa-solid fa-folder-open fa-4x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="cv.html">
-                        <div
-                        class="card">
-                            <div
-                                class="rectangular-out">
-                                <div
-                                    class="rectangular-inner card-text">
-                                    <h1>CV</h1>
-                                    <i class="fa-solid fa-file-circle-check fa-4x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
-
-                <section
-                class = "cards-line">
-                    <div
-                        class="line">
-                    </div>
-                </section>
-
-                <section
-                class = "cards-line">
-
-                    <figure>
-                        <img 
-                        class="experience-img"
-                        src="Drawings/message-sending.jpg" alt="">
-                    </figure>
-
-                    <a href="contact.html">
-                        <div
-                        class="card">
-                            <div
-                                class="rectangular-out">
-                                <div
-                                    class="rectangular-inner card-text">
-                                    <h1>CONTACT</h1>
-                                    <i class="fa-regular fa-message fa-4x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="blog.html">
-                        <div
-                        class="card">
-                            <div
-                                class="rectangular-out">
-                                <div
-                                    class="rectangular-inner card-text">
-                                    <h1>BLOG</h1>
-                                    <i class="fa-solid fa-thumbs-up fa-4x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/mfc_logo_transparent_1-removebg.png" alt="MFC Logo" class="logo-img">
+                <!-- <span class="logo-text">CS STUDENT</span> -->
             </div>
-        </article>
-    
-        <footer>
-            <section>
-                <nav>
-                    <a href = "index.html">Home</a>
-                </nav>
-            </section>
-            <section>
-                <em>
-                    Mateus Franco e Cunha 2024 &copy  
-                    <!-- 
-                        Symbol | Representation
-                            ©           &copy
-                    -->
-                </em>
-            </section>
-        </footer>        
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-section="home">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-section="experience">EXPERIENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link" data-section="experience">EDUCATION</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="about section">
+        <div class="container">
+            <!-- <h2 class="section-title">
+                <span class="glitch" data-text="ABOUT ME">ABOUT ME</span>
+            </h2> -->
+            <div class="about-content">
+                <div class="left-content">
+                    <div class="profile-circle">
+                        <div class="profile-glow"></div>
+                        <div class="profile-placeholder">
+                            <img src="assets/images/profile.png" alt="Profile Picture" class="profile-pic">
+                        </div>
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="hero-name">
+                            <span class="glitch" data-text="Hello, I'm Mateus">Hello, I'm Mateus</span>
+                        </h1>
+                        <div class="hero-title">
+                            <!-- <span class="separator">|</span> -->
+                            <span>Software Engineer</span>                          
+                        </div>
+                        <div class="hero-title">
+                            <!-- <span class="separator">|</span> -->
+                            <span>Full-Stack Development</span>                          
+                        </div>
+                        <div class="hero-title">
+                            <!-- <span class="separator">|</span> -->
+                            <span>AI & LLM Integration</span>
+                        </div>
+                        <div class="hero-title">
+                            <!-- <span class="separator">|</span> -->
+                            <span>Data Engineering</span>
+                        </div>
+                        <div class="hero-buttons">
+                            <div class="row-button">
+                                <a href="#experience" class="btn btn-outline">
+                                    <span>EXPERIENCE</span>
+                                    <div class="btn-glow"></div>
+                                </a>
+                                <a href="#education" class="btn btn-outline">
+                                    <span>EDUCATION</span>
+                                    <div class="btn-glow"></div>
+                                </a>
+                            </div>
+                            <div class="row-button">
+                                <a href="#projects" class="btn btn-outline">
+                                    <span>PROJECTS</span>
+                                    <div class="btn-glow"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-container">
+                    <div class="glass-panel">
+                        <p class="about-description">
+                            I am a Computer Science student with experience in backend development, data pipelines, and Java, with expertise in cloud apps, full-stack development, and AI/LLM integration. My work has focused on building scalable systems and enhancing data-driven decision-making.
+                        </p>
+                        <p class="about-description">
+                            I’ve gained hands-on experience at Morgan Stanley, Amazon, Shopee, and Alelo. At Morgan Stanley, I developed backend systems, integrated LLMs, and built ETL pipelines. At Amazon, I created a full-stack platform, integrated AI search, and earned the AWS Cloud Practitioner Certification. At Shopee, I optimized logistics through ETL pipelines and SQL/Python, and at Alelo, I automated data extraction and developed financial dashboards.
+                        </p>
+                        <p class="about-description">
+                            With a strong foundation in software engineering and data analytics, I am eager to apply my skills in creating scalable, efficient, and user-focused solutions.
+                        </p>
+                    </div>
+                    
+                    <div class="skills-preview glass-panel">
+                        <h3 class="subsection-title">Core Skills & Highlights</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Software & Full-Stack Development</span>
+                                    <!-- <span class="skill-percentage">90%</span> -->
+                                </div>
+                                <!-- <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div> -->
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Data Engineering & ETL Pipelines</span>
+                                    <!-- <span class="skill-percentage">85%</span> -->
+                                </div>
+                                <!-- <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div> -->
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Artificial Intelligence & LLM Integration</span>
+                                    <!-- <span class="skill-percentage">80%</span> -->
+                                </div>
+                                <!-- <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div> -->
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Cloud Computing & Infrastructure</span>
+                                    <!-- <span class="skill-percentage">75%</span> -->
+                                </div>
+                                <!-- <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div> -->
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Data Analytics & Visualization</span>
+                                    <!-- <span class="skill-percentage">75%</span> -->
+                                <!-- </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch" data-text="EXPERIENCE">EXPERIENCE</span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot">
+                        <div class="dot-glow"></div>
+                    </div>
+                    <div class="timeline-content glass-panel">
+                        <div class="timeline-date">2025 - Industrial Year</div>
+                        <h3 class="timeline-title">Technology Analyst Intern</h3>
+                        <p class="timeline-company">Morgan Stanley</p>
+                        <ul class="timeline-responsibilities">
+                            <li>Engineered and maintained a robust search engine backend system using Java and Spring Boot</li>
+                            <li>Developed integration pipelines between backend services, databases, and AI-powered search functionality</li>
+                            <li>Implemented Large Language Model (LLM) integration for smart exploratory data analysis and search optimization</li>
+                            <li>Designed and built RESTful APIs for data processing, cleaning, and transformation workflows</li>
+                            <li>Architected vector database solutions for efficient content vectorization and semantic search capabilities</li>
+                            <li>Created data factories and ETL pipelines for automated data processing and embeddings generation</li>
+                            <li>Optimized search performance through LLM-based query understanding and context analysis</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">LLM</span>
+                            <span class="tag">Vector DB</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">Data Engineering</span>
+                            <span class="tag">Angular</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot">
+                        <div class="dot-glow"></div>
+                    </div>
+                    <div class="timeline-content glass-panel">
+                        <div class="timeline-date">2024 - Summer Internship</div>
+                        <h3 class="timeline-title">Cloud Solutions Intern</h3>
+                        <p class="timeline-company">Amazon Web Services</p>
+                        <ul class="timeline-responsibilities">
+                            <li>Achieved AWS Cloud Practitioner Certification, demonstrating expertise in cloud architecture, security, and cost optimization</li>
+                            <li>Architected and developed an internal social media platform enhancing collaboration across AWS teams</li>
+                            <li>Implemented full-stack solution using Node.js and MySQL, deployed on AWS EC2 with RDS integration</li>
+                            <li>Integrated advanced data visualization using Chart.js and Plotly for intuitive insight presentation</li>
+                            <li>Enhanced content discovery by implementing AI-powered search using AWS Comprehend</li>
+                            <li>Led iterative design process through user feedback and agile development methodology</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Cloud Services</span>
+                            <span class="tag">Cloud Computing</span>
+                            <span class="tag">EC2</span>
+                            <span class="tag">RDS</span>
+                            <span class="tag">Comprehend</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Database</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot">
+                        <div class="dot-glow"></div>
+                    </div>
+                    <div class="timeline-content glass-panel">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3 class="timeline-title">Data Analyst</h3>
+                        <p class="timeline-company">Shopee</p>
+                        <ul class="timeline-responsibilities">
+                            <li>Engineered ETL pipelines for 15-minute data refresh cycles, enabling real-time logistics optimization and decision-making</li>
+                            <li>Developed automated data analysis workflows to monitor routes, parcels, and warehouse operations</li>
+                            <li>Created real-time Power BI dashboards tracking critical logistics metrics, reducing parcel loss rates</li>
+                            <li>Implemented complex SQL queries and Python scripts for route optimization and cost efficiency analysis</li>
+                            <li>Built data integration systems connecting global logistics platforms and warehouse management systems</li>
+                            <li>Designed automated alert systems for detecting logistics anomalies and operational inefficiencies</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Analytics</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Power BI</span>
+                            <span class="tag">ETL</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Data Engineering</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot">
+                        <div class="dot-glow"></div>
+                    </div>
+                    <div class="timeline-content glass-panel">
+                        <div class="timeline-date">2021 - 2023</div>
+                        <h3 class="timeline-title">Data Analyst</h3>
+                        <p class="timeline-company">Alelo</p>
+                        <ul class="timeline-responsibilities">
+                            <li>Developed web application automating data extraction processes, reducing response time from days to minutes</li>
+                            <li>Engineered database integration with geolocation features for enhanced customer behavior tracking</li>
+                            <li>Implemented advanced algorithms for real-time location tracking and customer flow analysis</li>
+                            <li>Created automated financial dashboards monitoring revenue, fraud detection, and customer metrics</li>
+                            <li>Designed ETL pipelines integrating AWS cloud storage data for standardized reporting</li>
+                            <li>Conducted customer behavior analysis driving targeted marketing campaigns and CRM strategies</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Analytics</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Athena</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Database</span>
+                            <span class="tag">ETL</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Geolocation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch" data-text="EDUCATION">EDUCATION</span>
+            </h2>
+            <div class="education-grid">
+                <div class="education-card glass-panel" data-category="data-analytics">
+                    <div class="education-item">
+                        <div class="education-info">
+                            <h4 class="education-degree">Bachelor of Science in Computer Science</h4>
+                            <p class="education-school">Queen Mary University of London</p>
+                            <p class="education-year">2023 - 2027</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch" data-text="PROJECTS">PROJECTS</span>
+            </h2>
+            <!-- <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="data-analytics">DATA ANALYTICS</button>
+                <button class="filter-btn" data-filter="machine-learning">MACHINE LEARNING</button>
+                <button class="filter-btn" data-filter="web-development">WEB DEVELOPMENT</button>
+            </div> -->
+            <div class="projects-grid">
+                <div class="project-card glass-panel" data-category="web-development">
+                    <div class="project-image">
+                        <div class="project-glow"></div>
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" class="project-icon">
+                                <!-- <rect x="10" y="70" width="8" height="20" fill="currentColor"/>
+                                <rect x="25" y="50" width="8" height="40" fill="currentColor"/>
+                                <rect x="40" y="30" width="8" height="60" fill="currentColor"/>
+                                <rect x="55" y="40" width="8" height="50" fill="currentColor"/>
+                                <rect x="70" y="20" width="8" height="70" fill="currentColor"/>
+                                <polyline points="15,65 30,45 45,25 60,35 75,15" stroke="currentColor" stroke-width="2" fill="none"/> -->
+                                <g stroke="var(--primary-cyan)" stroke-width="1">
+                                    <rect x="10" y="10" width="80" height="80" fill="none"/>
+                                    <line x1="30" y1="10" x2="30" y2="90"/>
+                                    <line x1="50" y1="10" x2="50" y2="90"/>
+                                    <line x1="70" y1="10" x2="70" y2="90"/>
+                                    <line x1="10" y1="30" x2="90" y2="30"/>
+                                    <line x1="10" y1="50" x2="90" y2="50"/>
+                                    <line x1="10" y1="70" x2="90" y2="70"/>
+                                </g>
+                                <!-- Alive cells (glowing) -->
+                                <rect x="30" y="10" width="20" height="20" fill="var(--neon-purple)" opacity="0.8"/>
+                                <rect x="50" y="30" width="20" height="20" fill="var(--primary-cyan)" opacity="0.8"/>
+                                <rect x="10" y="50" width="20" height="20" fill="var(--primary-cyan)" opacity="0.8"/>
+                                <rect x="30" y="70" width="20" height="20" fill="var(--neon-purple)" opacity="0.8"/>
+                                <!-- Optional: Add a cell with a glow effect -->
+                                <rect x="70" y="50" width="20" height="20" fill="var(--primary-cyan)" opacity="0.8">
+                                    <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+                                </rect>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Game of Life</h3>
+                        <p class="project-description">Conway’s Game of Life - The Game of Life, also known as the cellular automaton, is a classic example of a simple mathematical model that can produce complex and fascinating patterns.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Algorithms & Data Structures</span>
+                            <span class="tag">State Management</span>
+                            <span class="tag">UI/UX Design</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mmateus-fc.github.io/Portfolio/Game%20of%20Life/index.html" target="_blank" class="project-link">
+                                <span>VIEW PROJECT</span>
+                                <div class="link-glow"></div>
+                            </a>
+                            <!-- <a href="#" class="project-link">
+                                <span>GITHUB</span>
+                                <div class="link-glow"></div>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel" data-category="machine-learning">
+                    <div class="project-image">
+                        <div class="project-glow"></div>
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" class="project-icon">
+                                <!-- <circle cx="30" cy="30" r="8" fill="currentColor"/>
+                                <circle cx="70" cy="30" r="8" fill="currentColor"/>
+                                <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                                <circle cx="30" cy="70" r="8" fill="currentColor"/>
+                                <circle cx="70" cy="70" r="8" fill="currentColor"/>
+                                <line x1="30" y1="30" x2="50" y2="50" stroke="currentColor" stroke-width="2"/>
+                                <line x1="70" y1="30" x2="50" y2="50" stroke="currentColor" stroke-width="2"/>
+                                <line x1="50" y1="50" x2="30" y2="70" stroke="currentColor" stroke-width="2"/>
+                                <line x1="50" y1="50" x2="70" y2="70" stroke="currentColor" stroke-width="2"/> -->
+                                <!-- Forest trees (triangles) -->
+                                <polygon points="20,110 35,80 50,110" fill="var(--primary-cyan)" opacity="0.8"/>
+                                <polygon points="70,110 85,80 100,110" fill="var(--primary-cyan)" opacity="0.8"/>
+                                <polygon points="45,80 60,50 75,80" fill="var(--neon-purple)" opacity="0.8"/>
+                                <polygon points="90,60 100,40 110,60" fill="var(--primary-cyan)" opacity="0.7"/>
+                                <polygon points="10,60 20,40 30,60" fill="var(--primary-cyan)" opacity="0.7"/>
+                                <!-- Board path (dashed line) -->
+                                <polyline points="25,110 55,80 95,110 105,110" 
+                                    stroke="var(--text-primary)" stroke-width="2" fill="none" stroke-dasharray="5,4"/>
+                                <polyline points="30,60 60,50 100,40" 
+                                    stroke="var(--text-primary)" stroke-width="2" fill="none" stroke-dasharray="5,4"/>
+                                <!-- Player tokens (circles) -->
+                                <circle cx="55" cy="80" r="6" fill="var(--neon-purple)" stroke="var(--primary-cyan)" stroke-width="2"/>
+                                <circle cx="95" cy="110" r="6" fill="var(--primary-cyan)" stroke="var(--neon-purple)" stroke-width="2"/>
+                                <circle cx="30" cy="60" r="5" fill="var(--primary-cyan)" stroke="var(--neon-purple)" stroke-width="2"/>
+                                <circle cx="100" cy="40" r="4" fill="var(--neon-purple)" stroke="var(--primary-cyan)" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Forest Board Game</h3>
+                        <p class="project-description">A board game scenario where players move through a forest.</p>
+                        <div class="project-tags">
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">Object-Oriented Programming</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mmateus-fc/Projects/tree/main/Forest%20Game" target="_blank" class="project-link">
+                                <span>VIEW PROJECT</span>
+                                <div class="link-glow"></div>
+                            </a>
+                            <!-- <a href="#" class="project-link">
+                                <span>GITHUB</span>
+                                <div class="link-glow"></div>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch" data-text="SKILLS">SKILLS</span>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category glass-panel">
+                    <h3 class="category-title">CERTIFICATION AND TRAINING</h3>
+                    <div class="skill-icons cloud-practioner">
+                        <div class="skill-icon" data-skill="aws">
+                            <div class="icon-glow"></div>
+                            <div class="icon-placeholder">
+                                <!-- <svg viewBox="0 0 100 100">
+                                    <path d="M50 10 Q60 10 60 20 L60 40 Q60 50 50 50 L30 50 Q20 50 20 40 L20 30 Q20 20 30 20 Z" fill="currentColor"/>
+                                    <path d="M50 50 Q40 50 40 60 L40 80 Q40 90 50 90 L70 90 Q80 90 80 80 L80 70 Q80 60 70 60 Z" fill="currentColor"/>
+                                </svg> -->
+                                <img src="assets/images/cloud-practioner.png" alt="AWS Cloud Practitioner" style="width: 100px; height: 100px; object-fit: contain;">
+                            </div>
+                            <span class="skill-name">AWS Certified Cloud Practitioner</span>
+                            <div class="project-links">
+                                <a href="https://www.credly.com/badges/8262ef7f-a1a3-4967-9e45-6797c7700dbd/public_url" target="_blank" class="project-link">
+                                    <span>View Credentials</span>
+                                    <div class="link-glow"></div>
+                                </a>
+                            </div>
+                            <!-- <div class="skill-level">90%</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-panel">
+                    <h3 class="category-title">SOFTWARE ENGINEERING & DEVELOPMENT</h3>
+                    <div class="skill-icons">
+                        <ul>
+                            <li>Backend Engineering</li>
+                            <li>Full-Stack Development</li>
+                            <li>API Development</li>
+                            <li>Cloud Applications & Architecture</li>
+                            <li>Data Engineering (ETL Pipelines, Data Processing, Data Modeling, Database Management)</li>
+                            <li>LLM Integration (Large Language Models for AI-powered solutions, Semantic Search)</li>
+                            <li>Prompt Engineering (Designing and optimizing prompts for LLMs to enhance AI model performance)</li>
+                        </ul>
+                        <!-- <div class="skill-icon" data-skill="pandas">
+                            <div class="icon-glow"></div>
+                            <div class="icon-placeholder pandas">
+                                <svg viewBox="0 0 100 100">
+                                    <rect x="20" y="30" width="15" height="40" fill="currentColor"/>
+                                    <rect x="42.5" y="20" width="15" height="60" fill="currentColor"/>
+                                    <rect x="65" y="35" width="15" height="30" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Pandas</span>
+                            <div class="skill-level">85%</div>
+                        </div>
+                        <div class="skill-icon" data-skill="numpy">
+                            <div class="icon-glow"></div>
+                            <div class="icon-placeholder numpy">
+                                <svg viewBox="0 0 100 100">
+                                    <polygon points="50,20 70,40 70,60 50,80 30,60 30,40" fill="currentColor"/>
+                                    <text x="50" y="55" text-anchor="middle" font-size="10" fill="black">NumPy</text>
+                                </svg>
+                            </div>
+                            <span class="skill-name">NumPy</span>
+                            <div class="skill-level">80%</div>
+                        </div>
+                        <div class="skill-icon" data-skill="matplotlib">
+                            <div class="icon-glow"></div>
+                            <div class="icon-placeholder matplotlib">
+                                <svg viewBox="0 0 100 100">
+                                    <polyline points="20,70 30,50 40,60 50,30 60,45 70,25 80,40" stroke="currentColor" stroke-width="3" fill="none"/>
+                                    <circle cx="20" cy="70" r="2" fill="currentColor"/>
+                                    <circle cx="30" cy="50" r="2" fill="currentColor"/>
+                                    <circle cx="40" cy="60" r="2" fill="currentColor"/>
+                                    <circle cx="50" cy="30" r="2" fill="currentColor"/>
+                                    <circle cx="60" cy="45" r="2" fill="currentColor"/>
+                                    <circle cx="70" cy="25" r="2" fill="currentColor"/>
+                                    <circle cx="80" cy="40" r="2" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Matplotlib</span>
+                            <div class="skill-level">75%</div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="skill-category glass-panel">
+                    <h3 class="category-title">WEB & UI DEVELOPMENT</h3>
+                    <div class="skill-icons">
+                        <ul>
+                            <li>HTML, CSS</li>
+                            <li>Angular, React</li>
+                            <li>Node.js</li>
+                            <li>RESTful APIs</li>
+                            <li>Frontend UI Design</li>
+                            <li>Git, GitHub</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-panel">
+                    <h3 class="category-title">CLOUD & INFRASTRUCTURE</h3>
+                    <div class="skill-icons">
+                        <ul>
+                            <li>AWS (EC2, RDS, S3, Comprehend, Athena, QuickSight)</li>
+                            <li>Cloud Deployment & Solutions</li>
+                            <li>Cloud Computing Architecture</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-panel">
+                    <h3 class="category-title">DATA ANALYSIS & VISUALIZATION</h3>
+                    <div class="skill-icons">
+                        <ul>
+                            <li>Power BI</li>
+                            <li>Chart.js, Plotly, amCharts</li>
+                            <li>Streamlit</li>
+                            <li>Streamlit</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-panel">
+                    <h3 class="category-title">DATABASES & STORAGE</h3>
+                    <div class="skill-icons">
+                        <ul>
+                            <li>Relational Databases (MySQL, PostgreSQL)</li>
+                            <li>Vector Databases</li>
+                            <li>Data Lakes & Data Warehouses</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-panel">
+                    <h3 class="category-title">PROGRAMMING & SCRIPTING</h3>
+                    <div class="skill-icons">
+                        <ul>
+                            <li>Java, Spring Boot</li>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>JavaScript, TypeScript</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-panel">
+                    <h3 class="category-title">Tools & Environments</h3>
+                    <div class="skill-icons">
+                        <ul>
+                            <li>IntelliJ IDEA</li>
+                            <li>Visual Studio</li>
+                            <li>DataGrip</li>
+                            <li>Microsoft Office (Excel, PowerPoint, Word)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch" data-text="CONTACT">CONTACT</span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="glass-panel">
+                        <h3 class="contact-title">LET'S CONNECT</h3>
+                        <p class="contact-description">
+                            I'm always interested in new opportunities and collaborations. 
+                            Feel free to reach out if you'd like to discuss projects, opportunities, or just chat about technology!
+                        </p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon email">
+                                    <svg viewBox="0 0 100 100">
+                                        <rect x="15" y="25" width="70" height="50" rx="5" stroke="currentColor" stroke-width="2" fill="none"/>
+                                        <polyline points="15,25 50,50 85,25" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">EMAIL</span>
+                                    <span class="contact-value">thematfc@gmail.com</span>
+                                </div>
+                            </div>
+                            <!-- <div class="contact-method">
+                                <div class="contact-icon phone">
+                                    <svg viewBox="0 0 100 100">
+                                        <path d="M25 15 Q20 15 20 20 L20 80 Q20 85 25 85 L75 85 Q80 85 80 80 L80 20 Q80 15 75 15 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                        <circle cx="50" cy="75" r="3" fill="currentColor"/>
+                                        <line x1="35" y1="25" x2="65" y2="25" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">PHONE</span>
+                                    <span class="contact-value">+1 (555) 123-4567</span>
+                                </div>
+                            </div> -->
+                            <div class="contact-method">
+                                <div class="contact-icon location">
+                                    <svg viewBox="0 0 100 100">
+                                        <path d="M50 20 Q35 20 35 35 Q35 50 50 70 Q65 50 65 35 Q65 20 50 20 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                        <circle cx="50" cy="35" r="8" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">LOCATION</span>
+                                    <span class="contact-value">London, United Kingdom</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <a href="https://www.linkedin.com/in/mateus-f-c/" target="_blank" class="social-link linkedin">
+                                    <div class="social-glow"></div>
+                                    <div class="contact-icon location">
+                                        <img src="assets/images/linkedin_icon.svg" alt="LinkedIn" class="social-icon" style="width: 40px; height: 40px; display: block; margin: 0 auto;">
+                                    </div>
+                                </a>
+                                <div class="contact-details">
+                                    <span class="contact-label">LINKEDIN</span>
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="contact-form">
+                    <div class="glass-panel">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                                <div class="input-glow"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span>SEND MESSAGE</span>
+                                <div class="btn-glow"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2025 CS Student. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="assets/images/mfc_logo_transparent_1-removebg.png" alt="Logo">
+            </div>
+            <div class="loading-text">
+                <span class="glitch" data-text="INITIALIZING">INITIALIZING</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
         </div>
     </div>
+
 </body>
 </html>
 
